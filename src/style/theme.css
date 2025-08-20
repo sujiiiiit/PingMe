@@ -1,0 +1,45 @@
+:root {
+  /* colors  */
+  --border: rgb(228, 228, 231);
+  --surface: rgb(255, 255, 255);
+  --background: rgb(244, 244, 245);
+  --primary: rgb(51, 144, 236);
+  --secondary: rgb(196, 201, 204);
+  --dark-secondary: rgb(158, 158, 158);
+  --light-primary: rgb(51, 144, 236, 0.08);
+  --dark-primary: rgb(32, 134, 234);
+  --danger: rgb(223, 63, 64);
+  --dark-danger: rgb(210, 35, 36);
+  --light-danger: rgba(223, 63, 64, 0.08);
+  --primary-text: rgb(0, 0, 0);
+  --secondary-text: rgb(112, 117, 121);
+  --light-secondary-text: rgb(112, 117, 121, 0.08);
+  --light-filled-secondary: rgb(243, 243, 244);
+  --menu-box-shadow-color: rgb(0, 0, 0, 0.15);
+  --scrollbar-color: rgb(0, 0, 0, 0.2);
+}
+
+.dark {
+  --border: rgb(39, 39, 42);
+  --surface: rgb(33, 33, 33);
+  --background: rgb(10, 10, 10);
+  --primary: rgb(135, 116, 225);
+  --light-primary: rgba(135, 116, 225, 0.08);
+  --dark-primary: rgb(121, 99, 221);
+  --danger: rgb(255, 89, 90);
+  --dark-danger: rgb(255, 48, 49);
+  --light-danger: rgba(255, 89, 90, 0.08);
+  --primary-text: rgb(255, 255, 255);
+  --secondary-text: rgb(170, 170, 170);
+  --light-secondary-text: rgb(170, 170, 170, 0.08);
+  --light-filled-secondary: rgb(43, 43, 43);
+  --scrollbar-color: rgb(255, 255, 255, 0.2);
+}
+
+:root {
+  /* dimensions  */
+  --radius: 0.625rem;
+  --column-left-width: 420px;
+  --current-column-left-width: 420px;
+  --right-column-width: 25dvw;
+}

@@ -1,0 +1,145 @@
+@font-face {
+  font-family: tgico;
+  src: url(/static/font/tgico.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+.tgico:after,
+.tgico:before,
+[class*=" tgico-"]:after,
+[class*=" tgico-"]:before,
+[class^="tgico-"] {
+  speak: never;
+  font-feature-settings: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: tgico !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: none;  
+}
+
+.tgico-check:before {
+  content: "\E900";
+}
+.tgico-check-check:before {
+  content: "\E901";
+}
+.tgico-device:before {
+  content: "\E902";
+}
+.tgico-add:before {
+  content: "\E903";
+}
+.tgico-heart-plus:before {
+  content: "\E904";
+}
+.tgico-boost-plus:before {
+  content: "\E905";
+}
+.tgico-align-center:before {
+  content: "\E90A";
+}
+.tgico-align-left:before {
+  content: "\E90B";
+}
+.tgico-align-right:before {
+  content: "\E90C";
+}
+.tgico-animal:before {
+  content: "\E90D";
+}
+.tgico-maximize:before {
+  content: "\E90F";
+}
+.tgico-minimize:before {
+  content: "\E910";
+}
+.tgico-arrow-down:before {
+  content: "\E912";
+}
+.tgico-arrow-right:before {
+  content: "\E913";
+}
+.tgico-arrow-left:before {
+  content: "\E914";
+}
+.tgico-circle-down:before {
+  content: "\E915";
+}
+.tgico-chevron-down:before {
+  content: "\E916";
+}
+.tgico-chevron-right:before{
+  content: "\E91B";
+}
+.tgico-chevron-left:before{
+  content: "\E91C";
+}
+.tgico-paperclip:before {
+  content: "\E917";
+}
+.tgico-trash:before {
+  content: "\E91F";
+}
+.tgico-bold:before {
+  content: "\E920";
+}
+.tgico-calendar:before {
+  content: "\E92B";
+}
+.tgico-calendar-small:before {
+  content: "\E92C";
+}
+.tgico-camera:before {
+  content: "\E92D";
+}
+.tgico-camera-plus:before {
+  content: "\E92E";
+}
+.tgico-circle-pin:before {
+  content: "\E938";
+}
+.tgico-eye-filled:before {
+  content: "\E937";
+}
+.tgico-clock-filled:before {
+  content: "\E945";
+}
+.tgico-close:before {
+  content: "\E946";
+}
+.tgico-moon::before {
+  content: "\E954";
+}
+.tgico-hamburger:before {
+  content: "\E9BD";
+}
+.tgico-search:before {
+  content: "\EA1F";
+}
+.tgico-setting:before {
+  content: "\EA25";
+}
+.tgico-setting-cut:before {
+  content: "\EA26";
+}
+.tgico-setting-filled:before {
+  content: "\EA27";
+}
+
+.tgico-more::before{
+  content: "\E9C8";
+}
+.tgico-bookmark-filled::before{
+  content: "\EA1B";
+}
+.tgico-bookmark::before{
+  content: "\E91C";
+}
+
+
