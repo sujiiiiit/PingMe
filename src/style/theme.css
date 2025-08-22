@@ -35,6 +35,8 @@
   --light-secondary-text: rgb(170, 170, 170, 0.08);
   --light-filled-secondary: rgb(43, 43, 43);
   --scrollbar-color: rgb(255, 255, 255, 0.2);
+  --menu-background-color: rgba(33,33,33, .75);
+
 }
 
 :root {

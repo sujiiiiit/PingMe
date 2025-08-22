@@ -9,11 +9,14 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTabs } from "@/hooks/tabsContext";
+import { useTheme } from "@/components/theme/theme-provider";
+
 const SidebarHeader: React.FC = () => {
   const { searchContent, handleSearchChange } = useSearchInput();
   const { inputRef, clearInput } = useClearSearch();
   const { searchIsOpen, openSearch, closeSearch } = useSearch();
   const { switchTo } = useTabs();
+  const { theme, setTheme } = useTheme();
 
   const showClearBtn = searchIsOpen && searchContent;
 
@@ -53,7 +56,10 @@ const SidebarHeader: React.FC = () => {
               >
                 Settings
               </DropdownMenuItem>
-              <DropdownMenuItem icon="tgico tgico-moon">
+              <DropdownMenuItem
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                icon="tgico tgico-moon"
+              >
                 Enable dark mode
               </DropdownMenuItem>
             </DropdownMenuContent>

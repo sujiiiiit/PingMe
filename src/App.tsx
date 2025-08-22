@@ -5,13 +5,18 @@ import LeftColumn from "@/components/layout/columns/left/left-column";
 import CenterColumn from "@/components/layout/columns/center/center-column";
 import RightColumn from "@/components/layout/columns/right/right-column";
 import { useSearch } from "./hooks/useSearch";
+import { ThemeProvider } from "@/components/theme/theme-provider";
 
 const AppContent = () => {
-    const { searchIsOpen } = useSearch();
-  
+  const { searchIsOpen } = useSearch();
+
   const { activeColumn } = useColumn();
   return (
-    <div className={`main-layout animation-on ${searchIsOpen ? "search-open" : ""}`}>
+    <div
+      className={`main-layout animation-on ${
+        searchIsOpen ? "search-open" : ""
+      }`}
+    >
       <div className="layout-inner tabs-container">
         <div
           className="tabs-tab left-column"
@@ -38,9 +43,11 @@ const AppContent = () => {
 };
 
 const App = () => (
-  <Provider store={store}>
-    <AppContent />
-  </Provider>
+  <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+    <Provider store={store}>
+      <AppContent />
+    </Provider>
+  </ThemeProvider>
 );
 
 export default App;
