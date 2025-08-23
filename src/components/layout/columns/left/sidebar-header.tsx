@@ -45,7 +45,7 @@ const SidebarHeader: React.FC = () => {
       <div className="sidebar-header-btn">
         <div className="animated-menu-icon" />
         {!searchIsOpen ? (
-          <DropdownMenu>
+          <DropdownMenu modal={false}>
             <DropdownMenuTrigger asChild>
               <IconButton className="absolute inset-0 data-[state=open]:bg-light-secondary-text" />
             </DropdownMenuTrigger>
